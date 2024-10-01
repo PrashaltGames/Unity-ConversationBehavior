@@ -1,0 +1,10 @@
+{
+    "name": "com.prashalt.conversation-behavior",
+    "version": "0.1.0",
+    "displayName": "Conversation Behavior",
+    "description": "Node-based create conversation package",
+    "unity": "6000.0",
+    "dependencies": {
+        "com.unity.behavior": "1.0.2"
+    }
+}

@@ -1,0 +1,846 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4418749616237285525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd922ae02c94c87a66e46a10a7319b9, type: 3}
+  m_Name: Behavior Graph Blackboard Editor
+  m_EditorClassIdentifier: 
+  AssetID:
+    m_Value0: 2634090021423899543
+    m_Value1: 8961729294110847672
+  m_Variables:
+  - rid: 2417360556500451436
+  - rid: 2417360556500451484
+  - rid: 508414201576293184
+  m_VersionTimestamp: 638634208320717718
+  m_CommandBuffer:
+    m_Commands: []
+  m_RuntimeBlackboardAsset: {fileID: 8532644340412558691}
+  references:
+    version: 2
+    RefIds:
+    - rid: 508414201576293184
+      type: {class: 'TypedVariableModel`1[[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 16205669963359202441
+          m_Value1: 769446903135118898
+        Name: Message
+        IsExposed: 1
+        IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 2417360556500451436
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        IsExposed: 1
+        IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 2417360556500451484
+      type: {class: 'TypedVariableModel`1[[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 7554170498283667684
+          m_Value1: 17932186179359755312
+        Name: Speaker
+        IsExposed: 1
+        IsShared: 0
+        m_Value: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad8f2220607dac4db5082ff333fafb8, type: 3}
+  m_Name: Behavior Graph
+  m_EditorClassIdentifier: 
+  Blackboard: {fileID: -4418749616237285525}
+  m_Description: 
+  m_Nodes:
+  - rid: 2417360556500451437
+  - rid: 508414201576293057
+  - rid: 508414208715784325
+  - rid: 508414208715784330
+  - rid: 508414208715784464
+  - rid: 508414212366663748
+  - rid: 508414212366663757
+  - rid: 508414212366663846
+  m_VersionTimestamp: 638634208320129477
+  m_DebugInfo: {fileID: 3896133912931348298}
+  AssetID:
+    m_Value0: 2634090021423899543
+    m_Value1: 8961729294110847672
+  Story:
+    Story: 
+    StoryVariableNames: []
+    Variables: []
+  m_NodeModelsInfo:
+  - Name: On Start
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 3335272451348827663
+      m_Value1: 11549843281177505721
+    Variables: []
+    NamedChildren: []
+  - Name: Set Speaker Text
+    Story: 'Set Speaker Text [Value]'
+    RuntimeTypeID:
+      m_Value0: 11515425211414035739
+      m_Value1: 11841660064088778756
+    Variables:
+    - Name: Value
+      Type:
+        m_SerializableType: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+  - Name: Set Speaker
+    Story: 'Set Speaker [Value]'
+    RuntimeTypeID:
+      m_Value0: 775847703322235267
+      m_Value1: 4301353749458325989
+    Variables:
+    - Name: Value
+      Type:
+        m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    NamedChildren: []
+  - Name: Set Message
+    Story: 'Speaker speaks [Message]'
+    RuntimeTypeID:
+      m_Value0: 18437374073774701089
+      m_Value1: 4871868353736745283
+    Variables:
+    - Name: Message
+      Type:
+        m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    NamedChildren: []
+  - Name: Set Message Text
+    Story: 'Set Message Text [Value]'
+    RuntimeTypeID:
+      m_Value0: 6962005241150351986
+      m_Value1: 15127972223891814498
+    Variables:
+    - Name: Value
+      Type:
+        m_SerializableType: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+  - Name: Set Message Speed
+    Story: 'Set Message Speed [Value]'
+    RuntimeTypeID:
+      m_Value0: 5030725168984706596
+      m_Value1: 8512430031130173220
+    Variables:
+    - Name: Value
+      Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    NamedChildren: []
+  m_Blackboards: []
+  m_CommandBuffer:
+    m_Commands: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 508414201576293057
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 17.800016, y: 162.64998}
+        ID:
+          m_Value0: 14002060978244969150
+          m_Value1: 14300940017120455167
+        Parents:
+        - rid: 508414208715784330
+        PortModels:
+        - rid: 508414201576293058
+        - rid: 508414201576293059
+        NodeType:
+          m_SerializableType: Prashalt.ConversationBehavior.Foundation.Actions.SetSpeakerTextAction,
+            Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 11515425211414035739
+          m_Value1: 11841660064088778756
+        m_FieldValues:
+        - rid: 508414201576293060
+    - rid: 508414201576293058
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414201576293057
+        m_Connections: []
+    - rid: 508414201576293059
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414201576293057
+        m_Connections: []
+    - rid: 508414201576293060
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Value
+        Type:
+          m_SerializableType: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 508414201576293061
+        LinkedVariable:
+          rid: 508414205256007901
+    - rid: 508414201576293061
+      type: {class: 'BlackboardVariable`1[[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 508414205256007901
+      type: {class: 'TypedVariableModel`1[[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 7554170498283667684
+          m_Value1: 17932186179359755312
+        Name: Speaker
+        IsExposed: 1
+        IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 508414208715784325
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -161.60002, y: 251.44998}
+        ID:
+          m_Value0: 12467087902675715413
+          m_Value1: 5913806479200664734
+        Parents:
+        - rid: 508414212366663757
+        PortModels:
+        - rid: 508414208715784326
+        - rid: 508414208715784327
+        NodeType:
+          m_SerializableType: Prashalt.ConversationBehavior.Foundation.Actions.SetSpeakerAction,
+            Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 775847703322235267
+          m_Value1: 4301353749458325989
+        m_FieldValues:
+        - rid: 508414208715784328
+    - rid: 508414208715784326
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414208715784325
+        m_Connections: []
+    - rid: 508414208715784327
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414208715784325
+        m_Connections: []
+    - rid: 508414208715784328
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Value
+        Type:
+          m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 508414208715784329
+        LinkedVariable:
+          rid: -2
+    - rid: 508414208715784329
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: Someone
+    - rid: 508414208715784330
+      type: {class: SequenceNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        Position: {x: -0.5999857, y: 77.849945}
+        ID:
+          m_Value0: 15730418536285207341
+          m_Value1: 6808190110150526736
+        Parents: []
+        PortModels:
+        - rid: 508414208715784331
+        - rid: 508414208715784332
+        Nodes:
+        - rid: 508414212366663846
+        - rid: 508414201576293057
+        - rid: 508414212366663748
+    - rid: 508414208715784331
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414208715784330
+        m_Connections:
+        - rid: 2417360556500451438
+    - rid: 508414208715784332
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414208715784330
+        m_Connections:
+        - rid: 508414212366663758
+    - rid: 508414208715784464
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 207.30005, y: 304.26242}
+        ID:
+          m_Value0: 9761784416327484242
+          m_Value1: 9893475814975950394
+        Parents:
+        - rid: 508414212366663757
+        PortModels:
+        - rid: 508414208715784465
+        - rid: 508414208715784466
+        NodeType:
+          m_SerializableType: SetMessageAction, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 18437374073774701089
+          m_Value1: 4871868353736745283
+        m_FieldValues:
+        - rid: 508414208715784467
+    - rid: 508414208715784465
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414208715784464
+        m_Connections: []
+    - rid: 508414208715784466
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414208715784464
+        m_Connections: []
+    - rid: 508414208715784467
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Message
+        Type:
+          m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 508414208715784468
+        LinkedVariable:
+          rid: -2
+    - rid: 508414208715784468
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: Hello, This is Conversation Behavior created by AtsuAtsu
+    - rid: 508414212366663748
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -207.2999, y: 145.46298}
+        ID:
+          m_Value0: 11345475095672780237
+          m_Value1: 12331093456888725468
+        Parents:
+        - rid: 508414208715784330
+        PortModels:
+        - rid: 508414212366663749
+        - rid: 508414212366663750
+        NodeType:
+          m_SerializableType: Prashalt.ConversationBehavior.Foundation.Actions.SetMessageTextValueAction,
+            Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 6962005241150351986
+          m_Value1: 15127972223891814498
+        m_FieldValues:
+        - rid: 508414212366663751
+    - rid: 508414212366663749
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414212366663748
+        m_Connections: []
+    - rid: 508414212366663750
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414212366663748
+        m_Connections: []
+    - rid: 508414212366663751
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Value
+        Type:
+          m_SerializableType: TMPro.TextMeshProUGUI, Unity.TextMeshPro, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 508414212366663752
+        LinkedVariable:
+          rid: 508414212366663753
+    - rid: 508414212366663752
+      type: {class: 'BlackboardVariable`1[[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 508414212366663753
+      type: {class: 'TypedVariableModel`1[[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 16205669963359202441
+          m_Value1: 769446903135118898
+        Name: Message
+        IsExposed: 1
+        IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 508414212366663757
+      type: {class: SequenceNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        Position: {x: -0.69994515, y: 265.06302}
+        ID:
+          m_Value0: 6431720861849684166
+          m_Value1: 10545955663797146178
+        Parents: []
+        PortModels:
+        - rid: 508414212366663758
+        - rid: 508414212366663759
+        Nodes:
+        - rid: 508414208715784325
+        - rid: 508414208715784464
+    - rid: 508414212366663758
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414212366663757
+        m_Connections:
+        - rid: 508414208715784332
+    - rid: 508414212366663759
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414212366663757
+        m_Connections: []
+    - rid: 508414212366663846
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 6.1500897, y: 167.33095}
+        ID:
+          m_Value0: 15301691785106591401
+          m_Value1: 3267181913761651692
+        Parents:
+        - rid: 508414208715784330
+        PortModels:
+        - rid: 508414212366663847
+        - rid: 508414212366663848
+        NodeType:
+          m_SerializableType: Prashalt.ConversationBehavior.Foundation.Actions.SetMessageSpeedAction,
+            Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 5030725168984706596
+          m_Value1: 8512430031130173220
+        m_FieldValues:
+        - rid: 508414212366663849
+    - rid: 508414212366663847
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414212366663846
+        m_Connections: []
+    - rid: 508414212366663848
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 508414212366663846
+        m_Connections: []
+    - rid: 508414212366663849
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Value
+        Type:
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 508414212366663850
+        LinkedVariable:
+          rid: -2
+    - rid: 508414212366663850
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 0.1
+    - rid: 2417360556500451437
+      type: {class: StartNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 0, y: 0}
+        ID:
+          m_Value0: 17643929627977167579
+          m_Value1: 1251407117022595679
+        Parents: []
+        PortModels:
+        - rid: 2417360556500451438
+        NodeType:
+          m_SerializableType: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 3335272451348827663
+          m_Value1: 11549843281177505721
+        m_FieldValues: []
+        Repeat: 0
+    - rid: 2417360556500451438
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 2417360556500451437
+        m_Connections:
+        - rid: 508414208715784331
+--- !u!114 &3896133912931348298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b27bb6d9a2c8d540a10dff10acc543e, type: 3}
+  m_Name: Behavior Graph Debug Info
+  m_EditorClassIdentifier: 
+  m_CodeBreakPointsList: []
+--- !u!114 &8216114516707835794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db920e62f70f420bb33c771449926fa4, type: 3}
+  m_Name: Behavior Graph
+  m_EditorClassIdentifier: 
+  Graphs:
+  - rid: 508414212664721412
+  RootGraph:
+    rid: 508414212664721412
+  m_DebugInfo: {fileID: 3896133912931348298}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 508414212366664622
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 0.1
+    - rid: 508414212366664624
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: Someone
+    - rid: 508414212366664628
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: Hello, This is Conversation Behavior created by AtsuAtsu
+    - rid: 508414212664721412
+      type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        AuthoringAssetID:
+          m_Value0: 2634090021423899543
+          m_Value1: 8961729294110847672
+        m_DebugInfo: {fileID: 0}
+        Root:
+          rid: 508414212664721413
+        BlackboardReference:
+          rid: 508414212664721414
+        BlackboardGroupReferences: []
+        m_VersionTimestamp: 638634208320129477
+    - rid: 508414212664721413
+      type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 17643929627977167579
+          m_Value1: 1251407117022595679
+        Graph:
+          rid: 508414212664721412
+        m_Parent:
+          rid: -2
+        m_Child:
+          rid: 508414212664721415
+        Repeat: 0
+    - rid: 508414212664721414
+      type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Blackboard:
+          rid: 508414212664721416
+        m_Source: {fileID: 8532644340412558691}
+    - rid: 508414212664721415
+      type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 15730418536285207341
+          m_Value1: 6808190110150526736
+        Graph:
+          rid: 508414212664721412
+        m_Parent:
+          rid: 508414212664721413
+        m_Children:
+        - rid: 508414212664721417
+        - rid: 508414212664721418
+        - rid: 508414212664721419
+        - rid: 508414212664721420
+    - rid: 508414212664721416
+      type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Variables:
+        - rid: 508414212664721421
+        - rid: 508414212664721422
+        - rid: 508414212664721423
+    - rid: 508414212664721417
+      type: {class: SetMessageSpeedAction, ns: Prashalt.ConversationBehavior.Foundation.Actions, asm: Assembly-CSharp}
+      data:
+        ID:
+          m_Value0: 15301691785106591401
+          m_Value1: 3267181913761651692
+        Graph:
+          rid: 508414212664721412
+        m_Parent:
+          rid: 508414212664721415
+        Value:
+          rid: 508414212366664622
+    - rid: 508414212664721418
+      type: {class: SetSpeakerTextAction, ns: Prashalt.ConversationBehavior.Foundation.Actions, asm: Assembly-CSharp}
+      data:
+        ID:
+          m_Value0: 14002060978244969150
+          m_Value1: 14300940017120455167
+        Graph:
+          rid: 508414212664721412
+        m_Parent:
+          rid: 508414212664721415
+        Value:
+          rid: 508414212664721424
+    - rid: 508414212664721419
+      type: {class: SetMessageTextValueAction, ns: Prashalt.ConversationBehavior.Foundation.Actions, asm: Assembly-CSharp}
+      data:
+        ID:
+          m_Value0: 11345475095672780237
+          m_Value1: 12331093456888725468
+        Graph:
+          rid: 508414212664721412
+        m_Parent:
+          rid: 508414212664721415
+        Value:
+          rid: 508414212664721425
+    - rid: 508414212664721420
+      type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 6431720861849684166
+          m_Value1: 10545955663797146178
+        Graph:
+          rid: 508414212664721412
+        m_Parent:
+          rid: 508414212664721415
+        m_Children:
+        - rid: 508414212664721426
+        - rid: 508414212664721427
+    - rid: 508414212664721421
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 508414212664721422
+      type: {class: 'BlackboardVariable`1[[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 7554170498283667684
+          m_Value1: 17932186179359755312
+        Name: Speaker
+        m_Value: {fileID: 0}
+    - rid: 508414212664721423
+      type: {class: 'BlackboardVariable`1[[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 16205669963359202441
+          m_Value1: 769446903135118898
+        Name: Message
+        m_Value: {fileID: 0}
+    - rid: 508414212664721424
+      type: {class: 'ComponentToComponentBlackboardVariable`2[[TMPro.TextMeshProUGUI, Unity.TextMeshPro],[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+        m_LinkedVariable:
+          rid: 508414212664721422
+    - rid: 508414212664721425
+      type: {class: 'ComponentToComponentBlackboardVariable`2[[TMPro.TextMeshProUGUI, Unity.TextMeshPro],[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+        m_LinkedVariable:
+          rid: 508414212664721423
+    - rid: 508414212664721426
+      type: {class: SetSpeakerAction, ns: Prashalt.ConversationBehavior.Foundation.Actions, asm: Assembly-CSharp}
+      data:
+        ID:
+          m_Value0: 12467087902675715413
+          m_Value1: 5913806479200664734
+        Graph:
+          rid: 508414212664721412
+        m_Parent:
+          rid: 508414212664721420
+        Value:
+          rid: 508414212366664624
+    - rid: 508414212664721427
+      type: {class: SetMessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ID:
+          m_Value0: 9761784416327484242
+          m_Value1: 9893475814975950394
+        Graph:
+          rid: 508414212664721412
+        m_Parent:
+          rid: 508414212664721420
+        Message:
+          rid: 508414212366664628
+--- !u!114 &8532644340412558691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
+  m_Name: Behavior Graph Blackboard Editor
+  m_EditorClassIdentifier: 
+  m_VersionTimestamp: 0
+  AssetID:
+    m_Value0: 2634090021423899543
+    m_Value1: 8961729294110847672
+  m_Blackboard:
+    m_Variables:
+    - rid: 508414212664721428
+    - rid: 508414212664721429
+    - rid: 508414212664721430
+  m_SharedBlackboardVariableGuids: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 508414212664721428
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 508414212664721429
+      type: {class: 'BlackboardVariable`1[[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 7554170498283667684
+          m_Value1: 17932186179359755312
+        Name: Speaker
+        m_Value: {fileID: 0}
+    - rid: 508414212664721430
+      type: {class: 'BlackboardVariable`1[[TMPro.TextMeshProUGUI, Unity.TextMeshPro]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 16205669963359202441
+          m_Value1: 769446903135118898
+        Name: Message
+        m_Value: {fileID: 0}
